@@ -1,0 +1,121 @@
+---
+theme: default
+title: Slidev
+info: |
+  ## Slidev presentation
+  What is it and why use it
+
+  Learn more at [Sli.dev](https://sli.dev)
+# enable MDC Syntax: https://sli.dev/features/mdc
+mdc: true
+---
+
+# We do talks about code
+
+---
+
+<div class="w-full h-full flex items-center justify-center">
+  <div class="relative flex flex-col items-center -mt-[50px]">
+    <div class="relative w-80 h-80">
+      <img
+        v-motion
+        :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
+        :enter="final"
+        class="absolute inset-0"
+        src="https://sli.dev/logo-square.png"
+        alt=""
+      />
+      <img
+        v-motion
+        :initial="{ y: 500, x: -200, scale: 2 }"
+        :enter="final"
+        class="absolute inset-0"
+        src="https://sli.dev/logo-circle.png"
+        alt=""
+      />
+      <img
+        v-motion
+        :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
+        :enter="final"
+        class="absolute inset-0"
+        src="https://sli.dev/logo-triangle.png"
+        alt=""
+      />
+    </div>
+    <div
+      class="text-9xl text-[#2B90B6] -mt-[50px]"
+      v-motion
+      :initial="{ x: -160, opacity: 0 }"
+      :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
+      Slidev
+    </div>
+  </div>
+</div>
+
+<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
+<script setup lang="ts">
+const final = {
+  x: 0,
+  y: 0,
+  rotate: 0,
+  scale: 1,
+  transition: {
+    type: 'spring',
+    damping: 10,
+    stiffness: 20,
+    mass: 2
+  }
+}
+</script>
+
+---
+
+::code-group
+
+```sh [yarn]
+yarn create slidev
+```
+
+```sh [pnpm]
+pnpm create slidev
+```
+
+```sh [npm]
+npm init slidev@latest
+```
+
+::
+
+<div v-click class="flex" mt-20px>
+  <div class="flex items-center justify-items-center w-1/2">
+    <img src="./assets/markdown-mark.svg" alt="Markdown" class="mx-auto" >
+  </div>
+  <div class="w-1/2">
+
+::code-block
+
+```md [slides.md]
+---
+theme: default // TODO change
+title: Slidev
+info: |
+  ## Slidev presentation
+  What is it and why use it
+
+  Learn more at [Sli.dev](https://sli.dev)
+mdc: true
+---
+
+# We do talks about code
+
+---
+
+The rest of the slides ...
+
+---
+```
+
+::
+
+  </div>
+</div>
