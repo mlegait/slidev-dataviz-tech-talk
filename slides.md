@@ -125,6 +125,8 @@ layout: two-cols
 layoutClass: gap-8
 ---
 
+# Syntax coloring
+
 ::code-block
 
 ```ts [greet.ts]
@@ -137,7 +139,7 @@ const greet = (name: string): string => {
 
 ::
 
-<div class="h-20px"></div>
+<div h-20px></div>
 
 ::code-block
 
@@ -168,7 +170,7 @@ export const Greet = ({ name }: { name: string }) => {
 
 ::
 
-<div class="h-20px"></div>
+<div h-20px></div>
 
 ::code-block
 
@@ -182,3 +184,37 @@ export const Greet = ({ name }: { name: string }) => {
 ```
 
 ::
+
+---
+
+# Line Numbers and Highlighting
+
+<div mb-5>
+```
+ts {*|2,14|15|16-17|18}{lines:true,startLine:2}
+```
+</div>
+
+```ts {*|2,14|15|16-17|18}{lines:true,startLine:2}
+import { match, P } from 'ts-pattern';
+
+type Data =
+  | { type: 'text'; content: string }
+  | { type: 'img'; src: string };
+
+type Result =
+  | { type: 'ok'; data: Data }
+  | { type: 'error'; error: Error };
+
+const result: Result = ...;
+
+const html = match(result)
+  .with({ type: 'error' }, () => <p>Oups! An error occured</p>)
+  .with({ type: 'ok', data: { type: 'text' } }, (res) => <p>{res.data.content}</p>)
+  .with({ type: 'ok', data: { type: 'img', src: P.select() } }, (src) => <img src={src} />)
+  .exhaustive();
+```
+
+https://sli.dev/features/code-block-line-numbers.html
+
+https://sli.dev/features/line-highlighting
