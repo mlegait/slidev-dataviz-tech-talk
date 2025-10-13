@@ -119,3 +119,66 @@ The rest of the slides ...
 
   </div>
 </div>
+
+---
+layout: two-cols
+layoutClass: gap-8
+---
+
+::code-block
+
+```ts [greet.ts]
+// Say Hello to the user
+const greet = (name: string): string => {
+  const message = `Hello, ${name}!`;
+  return message.toUpperCase();
+};
+```
+
+::
+
+<div class="h-20px"></div>
+
+::code-block
+
+```py [greet.py]
+# Say Hello to the user
+def greet(name: str) -> str:
+  message = f"Hello, {name}!"
+  return message.upper()
+```
+
+::
+
+::right::
+
+::code-block
+
+```tsx [react]
+// Title saying Hello to the user
+export const Greet = ({ name }: { name: string }) => {
+  const message = `Hello, ${name}!`;
+  return (
+    <Title className="greet__title" level={1}>
+      {message.toUpperCase()}
+    </Title>
+  );
+};
+```
+
+::
+
+<div class="h-20px"></div>
+
+::code-block
+
+```css [styles.css]
+/* Title saying Hello to the user */
+.greet__title {
+  color: #4f46e5;
+  font-size: 1rem;
+  font-weight: bold;
+}
+```
+
+::
