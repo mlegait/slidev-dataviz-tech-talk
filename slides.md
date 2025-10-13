@@ -218,3 +218,32 @@ const html = match(result)
 https://sli.dev/features/code-block-line-numbers.html
 
 https://sli.dev/features/line-highlighting
+
+---
+
+# Monaco Editor
+
+```ts {monaco}
+import { produce } from "immer";
+import { gameState } from "./state";
+
+const newState = produce(gameState, (draft) => {
+  const potion = draft.player.inventory.find((i) => i.name === "Health Potion");
+  if (potion) {
+    potion.quantity -= 1;
+  }
+  draft.player.stats.equipment.armor.head = "Steel Helmet";
+  draft.player.inventory = draft.player.inventory.filter(
+    (i) => i.name !== "Old Boots",
+  );
+  draft.player.inventory.push({
+    id: 3,
+    name: "Phoenix Feather",
+    rarity: "legendary",
+    quantity: 1,
+  });
+  draft.player.stats.mana += 10;
+});
+```
+
+https://microsoft.github.io/monaco-editor/
