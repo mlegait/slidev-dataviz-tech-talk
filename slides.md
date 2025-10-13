@@ -187,7 +187,7 @@ export const Greet = ({ name }: { name: string }) => {
 
 ---
 
-# Line Numbers and Highlighting
+# Line Numbers and Line Highlighting
 
 <div mb-5>
 ```
@@ -215,9 +215,60 @@ const html = match(result)
   .exhaustive();
 ```
 
-https://sli.dev/features/code-block-line-numbers.html
-
+https://sli.dev/features/code-block-line-numbers.html  
 https://sli.dev/features/line-highlighting
+
+---
+
+# Shiki Magic Move
+
+````md magic-move
+```ts
+const nextState = {
+  ...baseState,
+  player: {
+    ...baseState.player,
+    inventory: [
+      ...baseState.player.inventory,
+      {
+        id: 3,
+        name: "Phoenix Feather",
+        rarity: "legendary",
+      },
+    ],
+  },
+};
+```
+
+```ts
+import { produce } from "immer";
+
+const nextState = produce(baseState, (draft) => {
+  draft.player.inventory = [
+    ...draft.player.inventory,
+    {
+      id: 3,
+      name: "Phoenix Feather",
+      rarity: "legendary",
+    },
+  ];
+});
+```
+
+```ts
+import { produce } from "immer";
+
+const nextState = produce(baseState, (draft) => {
+  draft.player.inventory.push({
+    id: 3,
+    name: "Phoenix Feather",
+    rarity: "legendary",
+  });
+});
+```
+````
+
+https://sli.dev/features/shiki-magic-move
 
 ---
 
@@ -246,4 +297,5 @@ const newState = produce(gameState, (draft) => {
 });
 ```
 
+https://sli.dev/features/monaco-editor.html  
 https://microsoft.github.io/monaco-editor/
