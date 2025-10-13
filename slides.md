@@ -121,11 +121,11 @@ The rest of the slides ...
 </div>
 
 ---
-layout: two-cols
-layoutClass: gap-8
----
 
 # Syntax coloring
+
+<div grid grid-cols-2 gap-6>
+<div flex flex-col gap-4>
 
 ::code-block
 
@@ -139,8 +139,6 @@ const greet = (name: string): string => {
 
 ::
 
-<div h-20px></div>
-
 ::code-block
 
 ```py [greet.py]
@@ -152,7 +150,8 @@ def greet(name: str) -> str:
 
 ::
 
-::right::
+</div>
+<div flex flex-col gap-4>
 
 ::code-block
 
@@ -170,8 +169,6 @@ export const Greet = ({ name }: { name: string }) => {
 
 ::
 
-<div h-20px></div>
-
 ::code-block
 
 ```css [styles.css]
@@ -185,17 +182,20 @@ export const Greet = ({ name }: { name: string }) => {
 
 ::
 
+</div>
+</div>
+
 ---
 
 # Line Numbers and Line Highlighting
 
 <div mb-5>
 ```
-ts {*|2,14|15|16-17|18}{lines:true,startLine:2}
+ts {all|2,14|15|16-17|18}{lines:true,startLine:2}
 ```
 </div>
 
-```ts {*|2,14|15|16-17|18}{lines:true,startLine:2}
+```ts {all|2,14|15|16-17|18}{lines:true,startLine:2}
 import { match, P } from 'ts-pattern';
 
 type Data =
