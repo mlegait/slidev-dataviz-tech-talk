@@ -127,8 +127,6 @@ The rest of the slides ...
 <div grid grid-cols-2 gap-6>
 <div flex flex-col gap-4>
 
-::code-block
-
 ```ts [greet.ts]
 // Say Hello to the user
 const greet = (name: string): string => {
@@ -137,10 +135,6 @@ const greet = (name: string): string => {
 };
 ```
 
-::
-
-::code-block
-
 ```py [greet.py]
 # Say Hello to the user
 def greet(name: str) -> str:
@@ -148,12 +142,8 @@ def greet(name: str) -> str:
   return message.upper()
 ```
 
-::
-
 </div>
 <div flex flex-col gap-4>
-
-::code-block
 
 ```tsx [react]
 // Title saying Hello to the user
@@ -167,10 +157,6 @@ export const Greet = ({ name }: { name: string }) => {
 };
 ```
 
-::
-
-::code-block
-
 ```css [styles.css]
 /* Title saying Hello to the user */
 .greet__title {
@@ -180,20 +166,12 @@ export const Greet = ({ name }: { name: string }) => {
 }
 ```
 
-::
-
 </div>
 </div>
 
 ---
 
 # Line Numbers and Line Highlighting
-
-<div mb-5>
-```
-ts {all|2,14|15|16-17|18}{lines:true,startLine:2}
-```
-</div>
 
 ```ts {all|2,14|15|16-17|18}{lines:true,startLine:2}
 import { match, P } from 'ts-pattern';
