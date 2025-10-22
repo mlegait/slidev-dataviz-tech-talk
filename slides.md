@@ -277,3 +277,27 @@ const newState = produce(gameState, (draft) => {
 
 https://sli.dev/features/monaco-editor.html  
 https://microsoft.github.io/monaco-editor/
+
+---
+
+# Monaco Runner
+
+```ts {monaco-run}{ editorOptions: { lineNumbers:'on'} }
+import { Temporal } from "temporal-polyfill";
+
+const jsSophia11 = Temporal.ZonedDateTime.from(
+  "2022-10-11T18:30:00[Europe/Paris]",
+);
+const jsSophia12 = Temporal.ZonedDateTime.from(
+  "2023-06-15T18:17:43[Europe/Paris]",
+);
+const jsSophia13 = Temporal.ZonedDateTime.from(
+  "2025-04-22T18:30:00[Europe/Paris]",
+);
+
+const jsSophia14 = jsSophia13.add(Temporal.Duration.from({ months: 2 }));
+//console.log(jsSophia14);
+
+//console.log(jsSophia13.since(jsSophia12)/*.toLocaleString()*/);
+//console.log(jsSophia13.since(jsSophia12).round({smallestUnit: 'second'}).toLocaleString());
+```
