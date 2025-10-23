@@ -8,7 +8,7 @@ const unscaledTransform = "scale(calc(1 / var(--slidev-slide-scale)))";
 </script>
 
 <template>
-  <div class="slidev-layout h-full w-full flex">
+  <div class="slidev-layout iframe-unscaled-right h-full w-full flex">
     <!-- Left column: custom content -->
     <div class="flex-1 overflow-auto">
       <slot />
