@@ -100,8 +100,8 @@ npm init slidev@latest
 
 ```md [slides.md]
 ---
-theme: default // TODO change
-title: Slidev
+theme: datadog
+title: "DataViz Tech Talk: Slidev"
 info: |
   ## Slidev presentation
   What is it and why use it
