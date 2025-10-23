@@ -306,6 +306,8 @@ const jsSophia14 = jsSophia13.add(Temporal.Duration.from({ months: 2 }));
 //console.log(jsSophia13.since(jsSophia12).round({smallestUnit: 'second'}).toLocaleString());
 ```
 
+https://sli.dev/features/monaco-run.html
+
 ---
 layout: iframe-unscaled-right
 
@@ -313,7 +315,7 @@ layout: iframe-unscaled-right
 url: /components/parent-selector.html
 ---
 
-# Writable Monaco Editor
+# Writable Monaco Editor + iframe
 
 <div flex flex-col gap-4>
 
@@ -330,6 +332,9 @@ url: /components/parent-selector.html
 
 </div>
 
+https://sli.dev/features/monaco-write
+https://github.com/slidevjs/slidev/issues/1920
+
 <!--
 .form:has(input:focus) {
 -->
@@ -341,3 +346,43 @@ url: /components/parent-selector.html
 You can use the `Toc` component to generate a table of contents for your slides:
 
 <Toc text-sm minDepth="1" maxDepth="2" />
+
+<div mt-10>
+
+https://sli.dev/builtin/components#toc
+
+</div>
+
+---
+
+# Clicks Animations
+
+<div flex flex-col gap-15>
+
+<div>
+
+You can add `v-click` to elements to add a click animation.
+
+<v-click>
+This shows up when you click the slide.
+</v-click>
+
+</div>
+
+<v-click>
+
+The <span v-mark.red="3"><code>v-mark</code> directive</span>
+also allows you to add
+<span v-mark.circle.orange="4">inline marks</span>
+, powered by [Rough Notation](https://roughnotation.com/).
+
+</v-click>
+
+</div>
+
+<div mt-30>
+
+https://sli.dev/guide/animations#click-animation  
+https://roughnotation.com/
+
+</div>
