@@ -1,6 +1,6 @@
 ---
 theme: default
-title: Slidev
+title: "DataViz Tech Talk: Slidev"
 info: |
   ## Slidev presentation
   What is it and why use it
@@ -12,6 +12,8 @@ mdc: true
 
 # We do talks about code
 
+---
+title: Slidev animation
 ---
 
 <div class="w-full h-full flex items-center justify-center">
@@ -68,6 +70,8 @@ const final = {
 }
 </script>
 
+---
+title: What is it?
 ---
 
 ::code-group
@@ -329,3 +333,11 @@ url: /components/parent-selector.html
 <!--
 .form:has(input:focus) {
 -->
+
+---
+
+# Table of contents
+
+You can use the `Toc` component to generate a table of contents for your slides:
+
+<Toc text-sm minDepth="1" maxDepth="2" />
