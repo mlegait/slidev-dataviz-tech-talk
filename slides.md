@@ -301,3 +301,12 @@ const jsSophia14 = jsSophia13.add(Temporal.Duration.from({ months: 2 }));
 //console.log(jsSophia13.since(jsSophia12)/*.toLocaleString()*/);
 //console.log(jsSophia13.since(jsSophia12).round({smallestUnit: 'second'}).toLocaleString());
 ```
+
+---
+layout: iframe-unscaled-right
+
+# the web page source
+url: /components/image-gallery.html
+---
+
+<<< ./components/image-gallery-responsive.css {monaco-write}
