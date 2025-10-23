@@ -8,24 +8,14 @@ const unscaledTransform = "scale(calc(1 / var(--slidev-slide-scale)))";
 </script>
 
 <template>
-  <div class="h-full w-full flex gap-4 p-6">
+  <div class="slidev-layout h-full w-full flex">
     <!-- Left column: custom content -->
     <div class="flex-1 overflow-auto">
       <slot />
     </div>
 
     <!-- Right column: unscaled iframe -->
-    <div
-      class="h-full overflow-auto min-h-0 flex-none"
-      style="
-        resize: both;
-        width: 50%;
-        min-width: 200px;
-        max-width: 90%;
-        min-height: 200px;
-        max-height: 95%;
-      "
-    >
+    <div class="h-full overflow-auto min-h-0 flex-none" style="width: 50%">
       <div
         :style="{
           width: unscaledSize,
