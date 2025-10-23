@@ -306,7 +306,26 @@ const jsSophia14 = jsSophia13.add(Temporal.Duration.from({ months: 2 }));
 layout: iframe-unscaled-right
 
 # the web page source
-url: /components/image-gallery.html
+url: /components/parent-selector.html
 ---
 
-<<< ./components/image-gallery-responsive.css {monaco-write}
+# Writable Monaco Editor
+
+<div flex flex-col gap-4>
+
+```html
+<form class="form">
+  <label>
+    Name
+    <input type="text" />
+  </label>
+</form>
+```
+
+<<< ./components/parent-selector.css {monaco-write}{height:'120px'}
+
+</div>
+
+<!--
+.form:has(input:focus) {
+-->

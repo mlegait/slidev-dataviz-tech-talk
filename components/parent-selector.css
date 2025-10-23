@@ -1,0 +1,4 @@
+.form:has(input:focus) {
+  background-color: aliceblue;
+  border-color: dodgerblue;
+}

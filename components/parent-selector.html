@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS parent selector</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        padding: 2rem;
+        font-family: Roboto, sans-serif;
+        font-size: 1.5rem;
+        display: grid;
+        place-items: center;
+      }
+
+      .form {
+        padding: 1.5rem;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #ccc;
+        border-radius: 8px;
+      }
+
+      input[type="text"] {
+        font-size: 2rem;
+      }
+    </style>
+    <link rel="stylesheet" href="./parent-selector.css" />
+  </head>
+  <body>
+    <main class="page">
+      <form class="form">
+        <label>
+          Name
+          <input type="text" />
+        </label>
+      </form>
+    </main>
+  </body>
+</html>
