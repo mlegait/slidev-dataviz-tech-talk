@@ -1,0 +1,29 @@
+{
+  "name": "slidev-datadog-theme",
+  "version": "0.0.0",
+  "description": "DataDog theme for Slidev",
+  "author": "mlegait <michele.legait@datadoghq.com>",
+  "license": "MIT",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "slidev": ">=v0.47.0"
+  },
+  "slidev": {
+    "defaults": {
+      "fonts": {
+        "mono": "Fira Code",
+        "sans": "Roboto",
+        "local": "Roboto"
+      }
+    }
+  },
+  "dependencies": {
+    "@slidev/types": "^0.47.0",
+    "codemirror-theme-vars": "^0.1.2",
+    "prism-theme-vars": "^0.2.4"
+  }
+}

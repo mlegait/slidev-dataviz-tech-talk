@@ -1,5 +1,5 @@
 ---
-theme: default
+theme: ./theme
 title: "DataViz Tech Talk: Slidev"
 info: |
   ## Slidev presentation
