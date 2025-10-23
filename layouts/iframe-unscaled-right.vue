@@ -15,7 +15,17 @@ const unscaledTransform = "scale(calc(1 / var(--slidev-slide-scale)))";
     </div>
 
     <!-- Right column: unscaled iframe -->
-    <div class="flex-1 h-full overflow-auto min-h-0">
+    <div
+      class="h-full overflow-auto min-h-0 flex-none"
+      style="
+        resize: both;
+        width: 50%;
+        min-width: 200px;
+        max-width: 90%;
+        min-height: 200px;
+        max-height: 95%;
+      "
+    >
       <div
         :style="{
           width: unscaledSize,
