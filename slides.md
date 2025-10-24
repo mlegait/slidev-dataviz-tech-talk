@@ -209,7 +209,6 @@ layout: main-footer
   <div class="flex gap-2">
     <span class="i-carbon-sun text-yellow-400 text-2xl" title="Sun icon"></span>
     <span class="i-carbon-moon text-gray-500 text-2xl" title="Moon icon"></span>
-    <span class="i-carbon-star text-purple-500 text-2xl" title="Star icon"></span>
   </div>
 </div>
 
