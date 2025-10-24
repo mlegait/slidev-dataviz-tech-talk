@@ -158,10 +158,14 @@ Let's not forget tables:
 | <kbd>down</kbd>                                    | next slide                  |
 
 ---
+layout: main-footer
+---
 
 # Themes
 
 <img src="/assets/official_themes.png" width="75%" class="mx-auto" />
+
+::footer::
 
 https://sli.dev/resources/theme-gallery#theme-gallery  
 https://sli.dev/features/eject-theme
@@ -228,6 +232,8 @@ export const Greet = ({ name }: { name: string }) => {
 </div>
 
 ---
+layout: main-footer
+---
 
 # Line Numbers and Line Highlighting
 
@@ -251,9 +257,13 @@ const html = match(result)
   .exhaustive();
 ```
 
+::footer::
+
 https://sli.dev/features/code-block-line-numbers.html  
 https://sli.dev/features/line-highlighting
 
+---
+layout: main-footer
 ---
 
 # Shiki Magic Move
@@ -304,8 +314,12 @@ const nextState = produce(baseState, (draft) => {
 ```
 ````
 
+::footer::
+
 https://sli.dev/features/shiki-magic-move
 
+---
+layout: main-footer
 ---
 
 # Monaco Editor
@@ -333,9 +347,13 @@ const newState = produce(gameState, (draft) => {
 });
 ```
 
+::footer::
+
 https://sli.dev/features/monaco-editor.html  
 https://microsoft.github.io/monaco-editor/
 
+---
+layout: main-footer
 ---
 
 # Monaco Runner
@@ -359,6 +377,8 @@ const jsSophia14 = jsSophia13.add(Temporal.Duration.from({ months: 2 }));
 //console.log(jsSophia13.since(jsSophia12)/*.toLocaleString()*/);
 //console.log(jsSophia13.since(jsSophia12).round({smallestUnit: 'second'}).toLocaleString());
 ```
+
+::footer::
 
 https://sli.dev/features/monaco-run.html
 
@@ -400,6 +420,8 @@ layout: center
 # And many more features
 
 ---
+layout: main-footer
+---
 
 # Table of contents
 
@@ -407,12 +429,12 @@ You can use the `Toc` component to generate a table of contents for your slides:
 
 <Toc text-sm minDepth="1" maxDepth="2" columns="2" />
 
-<div mt-10>
+::footer::
 
 https://sli.dev/builtin/components#toc
 
-</div>
-
+---
+layout: main-footer
 ---
 
 # Clicks Animations
@@ -440,12 +462,10 @@ also allows you to add
 
 </div>
 
-<div mt-30>
+::footer::
 
 https://sli.dev/guide/animations#click-animation  
 https://roughnotation.com/
-
-</div>
 
 ---
 layout: title-two-cols-footer
@@ -472,6 +492,8 @@ And adding your custom components is also super easy.
 ::footer::
 https://sli.dev/builtin/components.html
 
+---
+layout: main-footer
 ---
 
 # Diagrams
@@ -548,13 +570,13 @@ database "MySql" {
 
 </div>
 
-<div mt-10>
+::footer::
 
 https://sli.dev/features/mermaid  
 https://sli.dev/features/plantuml
 
-</div>
-
+---
+layout: main-footer
 ---
 
 # LaTeX
@@ -576,6 +598,7 @@ $$
 \end{aligned}
 $$
 
+::footer::
 https://sli.dev/features/latex
 
 ---
@@ -583,10 +606,16 @@ https://sli.dev/features/latex
 # You can even draw!
 
 ---
+layout: main-footer
+---
 
 # VS Code extension
 
-<img src="/assets/vscode-extension.png" width="75%" class="mx-auto" />
+<img src="/assets/vscode-extension.png" width="70%" class="mx-auto" />
+
+::footer::
+
+https://github.com/slidevjs/slidev/tree/main/packages/vscode
 
 ---
 layout: center
