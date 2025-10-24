@@ -9,3 +9,11 @@ To start the slide show:
 Edit the [slides.md](./slides.md) to see the changes.
 
 Learn more about Slidev at the [documentation](https://sli.dev/).
+
+# 📚 Slides
+
+You can view the slides here:
+
+https://mlegait.github.io/slidev-dataviz-tech-talk/
+
+(but some tricks only works when launched locally)
