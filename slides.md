@@ -126,6 +126,60 @@ The rest of the slides ...
 
 ---
 
+# Markdown
+
+You can write **bold**, _italic_, and ~~striked~~ text.
+
+- You add lists
+- with multiple
+- items
+
+Ordered lists too:
+
+1. first item
+2. second item
+3. third item
+
+Inline code of course: `myFunction(someParameter)` is really convenient.
+
+---
+hideInToc: true
+---
+
+# Markdown
+
+Let's not forget tables:
+
+|                                                    |                             |
+| -------------------------------------------------- | --------------------------- |
+| <kbd>right</kbd> / <kbd>space</kbd>                | next animation or slide     |
+| <kbd>left</kbd> / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
+| <kbd>up</kbd>                                      | previous slide              |
+| <kbd>down</kbd>                                    | next slide                  |
+
+---
+
+# Themes
+
+<img src="/assets/official_themes.png" width="75%" class="mx-auto" />
+
+https://sli.dev/resources/theme-gallery#theme-gallery  
+https://sli.dev/features/eject-theme
+
+<!--
+Don't forget to show the presenter mode!
+
+Presenter note with **bold**, *italic*, and ~~striked~~ text.
+
+Also, HTML elements are valid:
+<div class="flex w-full">
+  <span style="flex-grow: 1;">Left content</span>
+  <span>Right content</span>
+</div>
+-->
+
+---
+
 # Syntax coloring
 
 <div grid grid-cols-2 gap-6>
@@ -177,7 +231,7 @@ export const Greet = ({ name }: { name: string }) => {
 
 # Line Numbers and Line Highlighting
 
-```ts {all|2,14|15|16-17|18}{lines:true,startLine:2}
+```ts {all|2,14|15|16-17|18|all}{lines:true,startLine:1}
 import { match, P } from 'ts-pattern';
 
 type Data =
@@ -286,7 +340,7 @@ https://microsoft.github.io/monaco-editor/
 
 # Monaco Runner
 
-```ts {monaco-run}{ editorOptions: { lineNumbers:'on'} }
+```ts {monaco-run}
 import { Temporal } from "temporal-polyfill";
 
 const jsSophia11 = Temporal.ZonedDateTime.from(
@@ -328,11 +382,11 @@ url: /components/parent-selector.html
 </form>
 ```
 
-<<< ./components/parent-selector.css {monaco-write}{height:'120px'}
+<<< ./components/parent-selector.css {monaco-write}
 
 </div>
 
-https://sli.dev/features/monaco-write
+https://sli.dev/features/monaco-write  
 https://github.com/slidevjs/slidev/issues/1920
 
 <!--
@@ -351,7 +405,7 @@ layout: center
 
 You can use the `Toc` component to generate a table of contents for your slides:
 
-<Toc text-sm minDepth="1" maxDepth="2" />
+<Toc text-sm minDepth="1" maxDepth="2" columns="2" />
 
 <div mt-10>
 
@@ -392,6 +446,27 @@ https://sli.dev/guide/animations#click-animation
 https://roughnotation.com/
 
 </div>
+
+---
+layout: two-cols
+---
+
+# Embed Vue components
+
+You can use **Vue components** directly inside your slides.
+
+A few built-in components like `<Tweet/>` and `<Youtube/>` are provided.
+
+<Youtube id="nleqgO38pPU" width="350" height="200" />
+
+::right::
+
+And adding your custom components is also super easy.
+
+<!-- ./components/Counter.vue -->
+<Counter :count="10" m="t-4" />
+
+https://sli.dev/builtin/components.html
 
 ---
 
@@ -498,6 +573,22 @@ $$
 $$
 
 https://sli.dev/features/latex
+
+---
+
+# You can even draw!
+
+---
+
+# VS Code extension
+
+<img src="/assets/vscode-extension.png" width="75%" class="mx-auto" />
+
+---
+layout: center
+---
+
+# I'll stop here, but there are more
 
 ---
 layout: center

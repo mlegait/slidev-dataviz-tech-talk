@@ -1,9 +1,9 @@
 .slidev-layout {
   font-family: "Roboto", sans-serif;
 
-  h1 + p {
+  /* h1 + p {
     @apply -mt-2 opacity-50 mb-4;
-  }
+  } */
 
   p + h2,
   ul + h2,
@@ -46,8 +46,20 @@
   background-image: url("../assets/datadog-bg-title.png");
 
   h1 {
-    @apply text-6xl leading-20;
+    @apply text-6xl;
     color: white;
+  }
+}
+
+.slidev-layout.cover {
+  h1 {
+    @apply text-center;
+  }
+}
+
+.slidev-layout.intro {
+  h1 {
+    @apply leading-20;
   }
 }
 
