@@ -25,22 +25,20 @@ Footer text or references.
 
 <template>
   <div
-    class="slidev-layout title-two-cols-footer h-full w-full grid grid-rows-[auto,1fr,auto] gap-2"
+    class="slidev-layout title-two-cols-footer h-full w-full flex flex-col gap-2"
   >
-    <header>
-      <slot name="title" />
-    </header>
+    <slot name="title" />
 
-    <main class="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-0">
-      <section class="min-h-0 overflow-auto">
+    <main class="flex gap-6">
+      <section class="flex-1">
         <slot name="left" />
       </section>
-      <aside class="min-h-0 overflow-auto">
+      <section class="flex-1">
         <slot name="right" />
-      </aside>
+      </section>
     </main>
 
-    <footer class="mt-2 opacity-80 text-sm">
+    <footer class="opacity-80 text-sm absolute left-15 right-10 top-112">
       <slot name="footer" />
     </footer>
   </div>
