@@ -183,6 +183,40 @@ Also, HTML elements are valid:
 -->
 
 ---
+layout: main-footer
+---
+
+# UnoCSS
+
+```html
+<div class="flex flex-col items-center gap-4 mt-6">
+  <button
+    class="bg-gradient-to-r from-blue-400 to-purple-500 text-white px-6 py-2 rounded-lg shadow-lg text-lg hover:scale-105 transition-transform"
+  >
+    A stylish button with UnoCSS 🚀
+  </button>
+  <div class="flex gap-2">
+    <span class="i-carbon-sun text-yellow-400 text-2xl" title="Sun icon"></span>
+    <span class="i-carbon-moon text-gray-500 text-2xl" title="Moon icon"></span>
+  </div>
+</div>
+```
+
+<div class="flex flex-col items-center gap-4 mt-6">
+  <button class="bg-gradient-to-r from-blue-400 to-purple-500 text-white px-6 py-2 rounded-lg shadow-lg text-lg hover:scale-105 transition-transform">
+    A stylish button with UnoCSS 🚀
+  </button>
+  <div class="flex gap-2">
+    <span class="i-carbon-sun text-yellow-400 text-2xl" title="Sun icon"></span>
+    <span class="i-carbon-moon text-gray-500 text-2xl" title="Moon icon"></span>
+    <span class="i-carbon-star text-purple-500 text-2xl" title="Star icon"></span>
+  </div>
+</div>
+
+::footer::
+https://unocss.dev/
+
+---
 
 # Syntax coloring
 
