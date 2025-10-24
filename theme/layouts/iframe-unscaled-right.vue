@@ -31,6 +31,10 @@ const unscaledTransform = "scale(calc(1 / var(--slidev-slide-scale)))";
       </div>
     </div>
   </div>
+
+  <footer class="opacity-80 text-sm absolute left-15 right-10 top-112">
+    <slot name="footer" />
+  </footer>
 </template>
 
 <style scoped></style>

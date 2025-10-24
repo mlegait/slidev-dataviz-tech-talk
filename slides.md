@@ -270,7 +270,7 @@ layout: main-footer
 
 # Line Numbers and Line Highlighting
 
-```ts {all|2,14|15|16-17|18|all}{lines:true,startLine:1}
+```ts {all|1,13|14|15-16|17|all}{lines:true,startLine:1}
 import { match, P } from 'ts-pattern';
 
 type Data =
@@ -439,6 +439,7 @@ url: /components/parent-selector.html
 
 </div>
 
+::footer::
 https://sli.dev/features/monaco-write  
 https://github.com/slidevjs/slidev/issues/1920
 
