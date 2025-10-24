@@ -448,11 +448,14 @@ https://roughnotation.com/
 </div>
 
 ---
-layout: two-cols
+layout: title-two-cols-footer
 ---
+
+::title::
 
 # Embed Vue components
 
+::left::
 You can use **Vue components** directly inside your slides.
 
 A few built-in components like `<Tweet/>` and `<Youtube/>` are provided.
@@ -466,6 +469,7 @@ And adding your custom components is also super easy.
 <!-- ./components/Counter.vue -->
 <Counter :count="10" m="t-4" />
 
+::footer::
 https://sli.dev/builtin/components.html
 
 ---
