@@ -93,7 +93,9 @@
 }
 
 .slidev-layout.default,
-.slidev-layout.iframe-unscaled-right {
+.slidev-layout.iframe-unscaled-right,
+.slidev-layout.title-two-cols-footer,
+.slidev-layout.main-footer {
   background: linear-gradient(
     to top right,
     rgba(255, 255, 255, 1) 0%,
