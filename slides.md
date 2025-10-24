@@ -92,7 +92,7 @@ npm init slidev@latest
 
 <div v-click class="flex" mt-20px>
   <div class="flex items-center justify-items-center w-1/2">
-    <img src="./assets/markdown-mark.svg" alt="Markdown" class="mx-auto" >
+    <img src="/assets/markdown-mark.svg" alt="Markdown" class="mx-auto" >
   </div>
   <div class="w-1/2">
 
